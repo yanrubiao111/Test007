@@ -1,0 +1,32 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class a1 {
+	public static void main(String[] args) throws InterruptedException {
+	System.setProperty("webdriver.gecko.driver", "D:\\selemnium\\geckodriver.exe");// 告诉驱动的位置
+	System.setProperty("webdriver.firefox.bin", "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\firefox.exe");
+	WebDriver wd = new FirefoxDriver();
+	wd.get("http://139.9.83.25");
+	try {
+		Thread.sleep(1000);                     
+	} catch (InterruptedException e) {          
+		e.printStackTrace();
+	}
+	wd.get("http://139.9.83.25/register");
+	wd.findElement(By.xpath("/html/body/div/header/div/nav/div/ul/li[4]/a"));
+	wd.findElement(By.name("username")).sendKeys("zxr1212");
+	wd.findElement(By.name("password")).click();
+	wd.findElement(By.name("password")).sendKeys("1212");
+	wd.findElement(By.xpath("//input[@id='confirm-password']")).click();
+	wd.findElement(By.xpath("//input[@id='confirm-password']")).sendKeys("1212");
+	wd.findElement(By.xpath("//input[@id='email']")).click();
+	wd.findElement(By.xpath("//input[@id='email']")).sendKeys("2813373214@qq.com");
+	wd.findElement(By.xpath("/html/body/div/div/div/form/div[5]/div[2]/button")).click();
+
+	
+	
+
+	}
+	
+}
