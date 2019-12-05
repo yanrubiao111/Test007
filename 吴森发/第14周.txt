@@ -1,0 +1,54 @@
+本周完成的任务及总结：
+1、用reportNG完善测试报告美化
+2、尝试搭建jenkins环境，但都没有搭建成功
+3、使用selenium写一些自动化测试用例（由于之前知识有些遗忘，现疯狂巩固）
+
+package com.work.test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import com.webtest.core.BaseTest;
+
+public class Testitems extends BaseTest {
+	
+	/*
+	12/5 
+	测试网站：http://139.9.83.25
+	要求实现功能如下：
+	测试项目要求，根据自己测试用例编写。
+	
+	*/
+	
+	@Test
+	public void lastwork() throws InterruptedException {
+		
+//	打开被测网站
+		webtest.open("http://139.9.83.25");
+		Thread.sleep(2000);
+		
+//	点击登录
+		webtest.click("link=登录");
+		Thread.sleep(1000);
+		webtest.type("name=username", "test168");
+		webtest.type("name=password", "test123456");
+		webtest.type("name=code", "ssss");	//验证码
+		webtest.click("id=remember-me");
+//		webtest.click("class=col-sm-10 text-center");
+		webtest.click("xpath=//div[@class='col-sm-10 text-center']/button");
+		
+// 	2在打开网站首页时模拟鼠标向下滑动
+		Actions action11 = new Actions(driver);
+		WebElement xia = driver.findElement(By.xpath("//ul[@class='pagination justify-content-center']/li[1]"));
+		action11.moveToElement(xia).build().perform();//执行滑动动作
+		
+		
+//	点击“最热”
+		webtest.click("class=nav-link active");
+		
+	}
+
+}
+
