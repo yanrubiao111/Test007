@@ -1,0 +1,2 @@
+1.完善selenium的框架，美化测试测试报告Freemarker
+2.安装jenkins,掌握的不太好
