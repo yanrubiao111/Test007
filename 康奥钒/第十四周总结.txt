@@ -1,2 +1,89 @@
 1.完善selenium的框架，美化测试测试报告Freemarker
 2.安装jenkins,掌握的不太好
+
+package zidong;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class zidonghua {
+
+
+		private static final String By = null;
+
+		public static void main(String[] args) throws InterruptedException {
+			System.setProperty("webdriver.gecko.driver", "D:\\360lpl\\geckodriver.exe");// 驱动的位置
+			System.setProperty("webdriver.firefox.bin", "C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+			WebDriver wd = new FirefoxDriver();
+			wd.get("http://139.9.83.25");
+			
+			//1.注册
+			wd.get("http://139.9.83.25/register");
+			wd.findElement(By.xpath("/html/body/div/header/div/nav/div/ul/li[4]/a"));
+			wd.findElement(By.name("username")).sendKeys("769765144");
+			wd.findElement(By.name("password")).click();
+			wd.findElement(By.name("password")).sendKeys("1111");
+			wd.findElement(By.xpath("//input[@id='confirm-password']")).click();
+			wd.findElement(By.xpath("//input[@id='confirm-password']")).sendKeys("1111");
+			wd.findElement(By.xpath("//input[@id='email']")).click();
+			wd.findElement(By.xpath("//input[@id='email']")).sendKeys("769765144@qq.com");
+			wd.findElement(By.xpath("/html/body/div/div/div/form/div[5]/div[2]/button")).click();
+			
+			//2.登录
+			wd.get("http://139.9.83.25/login");
+			wd.findElement(By.name("username")).sendKeys("769765144");
+			wd.findElement(By.name("password")).click();
+			wd.findElement(By.name("password")).sendKeys("1111");
+			wd.findElement(By.xpath("//input[@id='verifycode']")).click();
+			wd.findElement(By.name("code")).sendKeys("abcd");
+			wd.findElement(By.xpath("/html/body/div/div/div/form/div[5]/div[2]/button")).click();
+			//3.最热帖子点赞
+	    	        wd.get("http://139.9.83.25/index?orderMode=1");
+			wd.findElement(By.xpath("/html/body/div/div/div/ul/li[1]/div/h6/a")).click();
+			wd.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[1]/div/div[2]/ul/li[1]/a")).click();
+			Thread.sleep(400);
+			wd.findElement(By.xpath("/html/body/div[2]/div/div/div[3]/button")).click();
+			
+			
+			//4.最热帖子回帖
+			wd.get("http://139.9.83.25/index?orderMode=1");
+			wd.findElement(By.xpath("/html/body/div/div/div/ul/li[1]/div/h6/a")).click();
+			wd.get("http://139.9.83.25/discuss/detail/277");
+			wd.findElement(By.name("content")).click();
+			
+			Thread.sleep(300);
+			
+			wd.findElement(By.name("content")).sendKeys("111111");
+			wd.findElement(By.xpath("/html/body/div[1]/div/div[3]/form/p[2]/button")).click();
+			
+			//5.橙白oj
+			wd.get("http://oj.acm-icpc.top");
+			//wd.findElement(By.xpath("//input[@id=navbarSupportedContent]/ul/li[2]/a")).click();
+			//wd.findElement(By.xpath("//input[@id='navbar']/ul[1]/li[1]/a/span")).click();
+			wd.get("http://ojjump.acm-icpc.top:8899/faqs.php");
+			Thread.sleep(300);
+			wd.get("http://ojjump.acm-icpc.top:8899/discuss3/discuss.php?");
+			Thread.sleep(300);
+			wd.get("http://ojjump.acm-icpc.top:8899/problemset.php");
+			Thread.sleep(300);
+			wd.get("http://ojjump.acm-icpc.top:8899/category.php");
+			Thread.sleep(300);
+			wd.get("http://ojjump.acm-icpc.top:8899/status.php");
+			Thread.sleep(300);
+			wd.get("http://ojjump.acm-icpc.top:8899/ranklist.php");
+			Thread.sleep(300);
+			wd.get("http://ojjump.acm-icpc.top:8899/contest.php");
+			
+			
+			
+			Thread.sleep(1000);
+
+		}
+
+	}
+
+
