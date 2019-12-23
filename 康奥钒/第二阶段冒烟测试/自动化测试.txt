@@ -144,8 +144,60 @@ public class zidonghua {
 				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/div/div[2]/span[1]/a")).click();
 			}
 			//19.关注与取消关注
-			public void test13() throws InterruptedException {
+			public void test14() throws InterruptedException {
 				wd.findElement(By.xpath("/html/body/div/div/div/ul/li[1]/div/div/button")).click();
+			}
+			//20.上传头像
+			public void test15() throws InterruptedException {
+				wd.findElement(By.xpath("//*[@id=\"head-image\"]")).click();
+				wd.findElement(By.xpath("//*[@id=\"uploadForm\"]/div[2]/div[2]/button")).click();
+			}
+			//21.直接点击立即保存
+			public void test16() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/form[2]/div[4]/div[2]/button")).click();
+			}
+			//22.点击我的博客上一页
+			public void test17() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/nav/ul/li[2]")).click();
+			}
+		   	 //23.点击我的博客下一页
+			public void test18() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/nav/ul/li[4]")).click();
+			}
+			//24.博客回帖
+			public void test19() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/ul/li/div[1]/a")).click();
+				wd.findElement(By.xpath("/html/body/div/div/div[2]/div/div[2]/a")).click();
+			}
+			//25.点击输入您的观点
+			public void test20() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/ul/li/div[1]/a")).click();
+				wd.findElement(By.xpath("/html/body/div/div/div[2]/ul/li[1]/div/ul/li[2]/form/div[1]/input[1]")).click();
+			}
+			//26.博客点赞
+			public void test21() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/ul/li/div[1]/a")).click();
+				wd.findElement(By.xpath("/html/body/div/div/div[2]/ul/li[1]/div/div[3]/ul/li[1]/a/b")).click();
+			}
+			//27.点击用户头像
+			public void test22() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/ul/li/div[1]/a")).click();
+				wd.findElement(By.xpath("/html/body/div/div/div[1]/div[1]/a/img")).click();
+			}
+			//28.查看所关注的人
+			public void test23() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/div/div[2]/span[1]/a")).click();
+				wd.findElement(By.xpath("/html/body/div/div/div/div/ul/li[1]/a")).click();
+			}
+			//29.查看关注自己的人
+			public void test24() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/div/div[2]/span[1]/a")).click();
+				wd.findElement(By.xpath("/html/body/div/div/div/div/ul/li[2]/a")).click();
+			}
+			//30.点击关注人的头像
+			public void test25() throws InterruptedException {
+				wd.findElement(By.xpath("/html/body/div/div/div/div[2]/div/div[2]/span[1]/a")).click();
+				wd.findElement(By.xpath("/html/body/div/div/div/ul/li[1]/a/img")).click();
 			}
 		}
  
