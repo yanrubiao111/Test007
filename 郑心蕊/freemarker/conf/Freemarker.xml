@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="s1" verbose="1" >
+	<listeners> 
+		<listener class-name="com.edu.freemarker.FreemarkerTestListener" /> 
+		
+	</listeners>
+
+	<test name="test1">
+			<classes>
+			<class name="com.edu.test.TestCases" />
+		</classes>
+	</test>
+	
+</suite>

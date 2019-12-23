@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="com.edu.freemarker.FreemarkerTestListener"/>
+  </listeners>
+  <test name="test1">
+    <classes>
+      <class name="com.edu.test.TestCases"/>
+    </classes>
+  </test> <!-- test1 -->
+</suite> <!-- Failed suite [s1] -->
