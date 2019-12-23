@@ -1,0 +1,48 @@
+[FATAL] 2019-09-17 22:26:43,667 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-17 22:26:43,672 com.edu.utils.Log - com.edu.test.SkuListTest@475530b9-TestSkuList1ÔËÐÐÊ§°Ü£¬ÐèÒª½ØÆÁ
+[FATAL] 2019-09-18 13:35:02,706 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-18 13:35:02,711 com.edu.utils.Log - com.edu.test.SkuListTest@26be92ad-TestSkuList1ÔËÐÐÊ§°Ü
+[FATAL] 2019-09-18 13:38:26,265 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-18 13:38:26,274 com.edu.utils.Log - com.edu.test.SkuListTest@26be92ad-TestSkuList1ÔËÐÐÊ§°Ü
+[FATAL] 2019-09-18 13:39:27,529 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-18 13:39:27,534 com.edu.utils.Log - com.edu.test.SkuListTest@26be92ad-TestSkuList1ÔËÐÐÊ§°Ü
+[FATAL] 2019-09-25 21:35:03,223 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-25 22:23:09,808 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-25 22:23:09,808 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 09:36:00,571 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 11:07:22,897 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 11:07:22,900 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 11:07:47,480 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 11:12:40,641 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 11:13:54,770 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 11:17:07,833 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 11:19:00,310 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 16:34:53,121 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 16:40:14,482 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 16:42:36,942 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 16:43:54,199 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-26 19:10:54,825 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-16 09:26:29,240 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :success
+[FATAL] 2019-12-16 09:28:25,811 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :success
+[FATAL] 2019-12-16 09:32:28,971 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :success
+[FATAL] 2019-12-17 09:00:27,739 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-17 09:21:36,615 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-22 15:17:06,339 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["login"] not found.; expected Value is :success
+[FATAL] 2019-12-22 15:21:08,269 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["login"] not found.; expected Value is :success
+[FATAL] 2019-12-22 15:21:40,837 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["login"] not found.; expected Value is :success
+[FATAL] 2019-12-22 15:30:17,536 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :success
+[FATAL] 2019-12-22 15:33:48,193 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :success
+[FATAL] 2019-12-22 15:34:11,564 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :success
+[FATAL] 2019-12-22 15:50:23,688 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["login"] not found.; expected Value is :success
+[FATAL] 2019-12-22 15:55:04,897 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :success
+[FATAL] 2019-12-22 15:56:30,443 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :success
+[FATAL] 2019-12-22 15:56:49,574 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :success
+[FATAL] 2019-12-22 15:57:40,728 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :success
+[FATAL] 2019-12-22 15:59:07,586 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["cellPhone"] not found.; expected Value is :success
+[FATAL] 2019-12-22 15:59:17,999 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["cellPhone"] not found.; expected Value is :success
+[FATAL] 2019-12-22 15:59:31,026 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :success
+[FATAL] 2019-12-22 16:00:36,883 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :fail
+[FATAL] 2019-12-22 16:01:03,970 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :ÇëÏÈµÇÂ¼£¡; expected Value is :true
+[FATAL] 2019-12-22 16:01:42,968 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :true
+[FATAL] 2019-12-22 16:03:23,861 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["login"] not found.; expected Value is :success
+[FATAL] 2019-12-22 16:03:34,684 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :JSONObject["login"] not found.; expected Value is :success

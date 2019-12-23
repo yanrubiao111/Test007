@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1296" started-at="2019-12-23T03:41:04Z" finished-at="2019-12-23T03:41:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1296" started-at="2019-12-23T03:41:04Z" finished-at="2019-12-23T03:41:05Z">
+      <class name="com.edu.task.Submit">
+        <test-method status="PASS" signature="Submit()[pri:0, instance:com.edu.task.Submit@cb5822]" name="Submit" duration-ms="1277" started-at="2019-12-23T03:41:04Z" finished-at="2019-12-23T03:41:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit -->
+      </class> <!-- com.edu.task.Submit -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

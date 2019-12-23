@@ -1,0 +1,30 @@
+[
+	{
+		"description": "login",
+		"request": {
+			"uri": "/common/fgadmin/login",
+			"method": "post",
+			"headers": {
+				"content-type": "application/json"
+			},
+			"json": {
+				"a": "86",
+				"b": "20",
+				"c": "net"
+			}
+		},
+		"response": {
+			"json": {
+				"message": "success",
+				"code": "200"
+			},
+			"cookies": {
+				"login": {
+					"value": "true",
+					"path": "/",
+					"domain": "127.0.0.1"
+				}
+			}
+		}
+	}
+]
