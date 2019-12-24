@@ -1,0 +1,195 @@
+//
+from Qingguo.HttpDriver.Sendhttp import SendHttp
+from Qingguo.HttpDriver import Common
+import unittest
+
+class SubmitTest(unittest.TestCase):
+
+    def setUp(self) :
+        self.submit_url="/fgadmin/orders/submit"
+        self.user = {"phoneArea": "86", "phoneNumber": "20000000000", "password": "netease123"}
+
+    def test_submit1(self):
+        cookies = Common.getcookies(self.user)
+        data = {"skuIds":"2,3","skuNumbers":"1,1","stockIds":"74966312,74966313","receiverName":"123","cellPhone":"12345678901","addressDetail":"4524525","province":"江苏省","city":"南京市","area":"浦口区","voiceStatus":0,"needInvoice":0,"invoiceHead":"","transportFee":0,"logisticsCompanyId":1,"accessSource":"noSource","accessDevice":0}
+        res = SendHttp().send_post_bycookies(self.submit_url, data, cookies)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("提交成功！")
+
+    def test_submit2(self):
+        cookies = Common.getcookies(self.user)
+        data = {"skuIds":"2,3","skuNumbers":"1,1","stockIds":"74966312,74966313","receiverName":"123","cellPhone":"12345678901","addressDetail":"4524525","province":"江苏省","city":"南京市","area":"浦口区","voiceStatus":0,"needInvoice":0,"invoiceHead":"","transportFee":0,"logisticsCompanyId":1,"accessSource":"noSource","accessDevice":0}
+        res = SendHttp().send_post_bycookies(self.submit_url, data, cookies)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("提交成功！")
+
+    def test_submit3(self):
+        cookies = Common.getcookies(self.user)
+        data = {"skuNumbers":"1,1","stockIds":"74966312,74966313","receiverName":"123","cellPhone":"12345678901","addressDetail":"4524525","province":"江苏省","city":"南京市","area":"浦口区","voiceStatus":0,"needInvoice":0,"invoiceHead":"","transportFee":0,"logisticsCompanyId":1,"accessSource":"noSource","accessDevice":0}
+        res = SendHttp().send_post_bycookies(self.submit_url, data, cookies)
+        print(res)
+        self.assertEqual(res['code'], 400)
+        print("提交失败！")
+
+    def test_submit4(self):
+        cookies = Common.getcookies(self.user)
+        data = {"skuIds":"2,3","stockIds":"74966312,74966313","receiverName":"123","cellPhone":"12345678901","addressDetail":"4524525","province":"江苏省","city":"南京市","area":"浦口区","voiceStatus":0,"needInvoice":0,"invoiceHead":"","transportFee":0,"logisticsCompanyId":1,"accessSource":"noSource","accessDevice":0}
+        res = SendHttp().send_post_bycookies(self.submit_url, data, cookies)
+        print(res)
+        self.assertEqual(res['code'], 400)
+        print("提交失败！")
+
+//
+from Qingguo.HttpDriver.Sendhttp import SendHttp
+import unittest
+
+class LoginTest(unittest.TestCase):
+
+    def setUp(self):
+        self.login_url = "/common/fgadmin/login"
+
+    def test_login1(self):
+        user = {"phoneArea": "86", "phoneNumber": "20000000000", "password": "netease123"}
+        res = SendHttp().send_post(self.login_url, user)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("登录成功！")
+
+    def test_login2(self):
+        user = {"phoneArea": "86", "phoneNumber": "20000000007", "password": "netease123"}
+        res = SendHttp().send_post(self.login_url, user)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("登录成功！")
+
+    def test_login3(self):
+        user = {"phoneArea": "86", "phoneNumber": "2000000000", "password": "netease123"}
+        res = SendHttp().send_post(self.login_url, user)
+        print(res)
+        self.assertEqual(res['code'], 400)
+        print("登录失败！")
+
+    def test_login4(self):
+        user = {"phoneArea": "86", "phoneNumber": "20000000007", "password": "netease12"}
+        res = SendHttp().send_post(self.login_url, user)
+        print(res)
+        self.assertEqual(res['code'], 400)
+        print("登录失败！")
+
+//
+from Qingguo.HttpDriver.Sendhttp import SendHttp
+from Qingguo.HttpDriver import Common
+import unittest
+
+class SkulistTest(unittest.TestCase):
+
+    def setUp(self):
+        self.skulist_url="/common/skuList"
+        self.user = {"phoneArea": "86", "phoneNumber": "20000000000", "password": "netease123"}
+
+    def test_skulist1(self):
+        data={"id":"218838"}
+        res = SendHttp().sent_get(self.skulist_url,data)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("获取成功！")
+
+    def test_skulist2(self):
+        data = {"id": "9999999999"}
+        res = SendHttp().sent_get(self.skulist_url,data)
+        print(res)
+        self.assertEqual(res['code'], 400)
+        print("获取失败！")
+
+//
+from Qingguo.HttpDriver.Sendhttp import SendHttp
+from Qingguo.HttpDriver import Common
+import unittest
+
+class ListTest(unittest.TestCase):
+
+    def setUp(self):
+        self.list_url="/fgadmin/addressst"
+        self.user = {"phoneArea": "86", "phoneNumber": "20000000000", "password": "netease123"}
+
+    def test_list1(self):
+        cookies = Common.getcookies(self.user)
+        res = SendHttp().sent_get_bycookies(self.list_url,cookies)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("获取成功！")
+
+    def test_list2(self):
+        cookies = Common.getcookies(self.user)
+        res = SendHttp().sent_get_bycookies(self.list_url,cookies)
+        print(res)
+        self.assertEqual(res['code'], 203)
+        print("收货地址为空！")
+
+//
+from Qingguo.HttpDriver.Sendhttp import SendHttp
+from Qingguo.HttpDriver import Common
+import unittest
+
+class AddTest(unittest.TestCase):
+
+    def setUp(self) :
+        self.add_url="/fgadmin/address/new"
+        self.user = {"phoneArea": "86", "phoneNumber": "20000000000", "password": "netease123"}
+
+    def test_add1(self):
+        cookies = Common.getcookies(self.user)
+        data = {"id":"","receiverName":"zj","cellPhone":"12345678901","province":"江苏省","city":"南京市","area":"浦口区","addressDetail":"zj"}
+        res = SendHttp().send_post_bycookies(self.add_url, data, cookies)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("添加成功！")
+
+    def test_add2(self):
+        cookies = Common.getcookies(self.user)
+        data = {"id":"","receiverName":"zj","cellPhone":"12345678901","province":"江苏省","city":"南京市","area":"浦口区","addressDetail":123}
+        res = SendHttp().send_post_bycookies(self.add_url, data, cookies)
+        print(res)
+        self.assertEqual(res['code'], 400)
+        print("添加失败！")
+
+//
+from Qingguo.HttpDriver.Sendhttp import SendHttp
+from Qingguo.HttpDriver import Common
+import unittest
+
+class TransportFeeTest(unittest.TestCase):
+
+    def setUp(self) :
+        self.list_url = "/fgadmin/addressst"
+        self.transportfee_url="/common/getTransportFee"
+        self.user = {"phoneArea": "86", "phoneNumber": "20000000000", "password": "netease123"}
+
+    def test_transportfee1(self):
+        cookies = Common.getcookies(self.user)
+        result = SendHttp().sent_get_bycookies(self.list_url, cookies)
+        receiveName = result['result']['list'][0]['fgUser']['userName']
+        province = result['result']['list'][0]['province']
+        city = result['result']['list'][0]['city']
+        area = result['result']['list'][0]['area']
+        data = {"id":"1","addressDetail":province+"_"+city+"_"+area}
+        res = SendHttp().sent_get(self.transportfee_url,data)
+        print(res)
+        self.assertEqual(res['code'], 200)
+        print("查询成功！")
+
+    def test_transportfee2(self):
+        cookies = Common.getcookies(self.user)
+        result = SendHttp().sent_get_bycookies(self.list_url, cookies)
+        data = {"id":"","receiverName":"zj","cellPhone":"12345678901","province":"江苏省","city":"南京市","area":"浦口区","addressDetail":123}
+        receiveName = result['result']['list'][0]['fgUser']['userName']
+        province = result['result']['list'][0]['province']
+        city = result['result']['list'][0]['city']
+        area = result['result']['list'][0]['area']
+        data = {"id": "1", "addressDetail": province + "-" + city + "-" + area}
+        res = SendHttp().sent_get(self.transportfee_url, data)
+        print(res)
+        self.assertEqual(res['code'], 400)
+        print("添加失败！")
