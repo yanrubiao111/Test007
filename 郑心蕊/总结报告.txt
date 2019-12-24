@@ -1,0 +1,9 @@
+freemarker的完成
+主要完成了以下内容
+任务1：学习java，可以发送hello world邮件
+任务2：发件人，收件人，的信息配置在属性文件
+任务3：掌握ReportNG美化测试报告
+任务4：javamail+ReportNG发送报告
+任务5：数据驱动
+任务10：ReportNG+testng的监听器，实现美化报告的作用
+带三阶段的接口测试主要由我组吴森发完成
