@@ -24,12 +24,12 @@ import bsh.This;
 import bsh.util.Sessiond;
 
 public class SendMail {
-//	æœåŠ¡å™¨åœ°å€:POP3æœåŠ¡å™¨: pop.126.comï¼›SMTPæœåŠ¡å™¨: smtp.126.comï¼›IMAPæœåŠ¡å™¨: imap.126.com
+//	·şÎñÆ÷µØÖ·:POP3·şÎñÆ÷: pop.126.com£»SMTP·şÎñÆ÷: smtp.126.com£»IMAP·şÎñÆ÷: imap.126.com
 	static int port = 25;
 	static String server = "smtp.126.com";  
 	static String from = "yan";
-	static String user = "testwusenfa@126.com";  
-	static String password = "test666666"; 
+	static String user = "testyanrubiao@126.com";  
+	static String password = "test00007"; 
     public static void sendEmail(String email, String subject, String body) throws UnsupportedEncodingException {
         try {
             Properties props = new Properties();
@@ -63,8 +63,7 @@ public class SendMail {
     }
     public static void main(String args[]) throws UnsupportedEncodingException
     {
-    	SendMail.sendEmail("1562122174@qq.com", "å®ç°æµ‹è¯•é‚®ç®±000", "Hello World!");
-    	System.out.println("å·²å‘é€æˆåŠŸï¼");
+    	SendMail.sendEmail("2697262172@qq.com", "ÊµÏÖ²âÊÔÓÊÏä000", "Hello World!");
+    	System.out.println("ÒÑ·¢ËÍ³É¹¦£¡");
     	
     }
-
