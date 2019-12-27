@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="149523" started-at="2019-12-23T05:28:05Z" finished-at="2019-12-23T05:30:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="149523" started-at="2019-12-23T05:28:05Z" finished-at="2019-12-23T05:30:35Z">
+      <class name="com.edu.test.Testitems">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="doBeforeClass" is-config="true" duration-ms="26579" started-at="2019-12-23T05:28:05Z" finished-at="2019-12-23T05:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="test02()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test02" duration-ms="1399" started-at="2019-12-23T05:28:32Z" description="控制滚动条拉到底，网页导航栏‘网页logo’点击测试——返回网页首页" finished-at="2019-12-23T05:28:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="test03()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test03" duration-ms="382" started-at="2019-12-23T05:28:33Z" description="网页主页面“最热”选项测试——跳转至相应的页面" finished-at="2019-12-23T05:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03 -->
+        <test-method status="PASS" signature="test04()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test04" duration-ms="14" started-at="2019-12-23T05:28:34Z" description="点击帖子“太冷了”——进入该帖子详情页面" finished-at="2019-12-23T05:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04 -->
+        <test-method status="PASS" signature="test05()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test05" duration-ms="1016" started-at="2019-12-23T05:28:34Z" description="该帖子下点赞功能测试" finished-at="2019-12-23T05:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05 -->
+        <test-method status="PASS" signature="test06()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test06" duration-ms="1307" started-at="2019-12-23T05:28:35Z" description="该帖子下回帖功能测试" finished-at="2019-12-23T05:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test06 -->
+        <test-method status="PASS" signature="test07()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test07" duration-ms="37" started-at="2019-12-23T05:28:36Z" description="帖子中某条回帖的点赞测试" finished-at="2019-12-23T05:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test07 -->
+        <test-method status="PASS" signature="test08()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test08" duration-ms="10" started-at="2019-12-23T05:28:36Z" description="帖子信息回复功能" finished-at="2019-12-23T05:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test08 -->
+        <test-method status="PASS" signature="test09()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test09" duration-ms="1" started-at="2019-12-23T05:28:36Z" description="网页首页“社区”点击测试" finished-at="2019-12-23T05:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09 -->
+        <test-method status="PASS" signature="test10()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test10" duration-ms="1" started-at="2019-12-23T05:28:36Z" description="网页首页“消息”点击测试" finished-at="2019-12-23T05:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test11()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test11" duration-ms="1" started-at="2019-12-23T05:28:36Z" description="网页首页“橙白OJ”点击测试" finished-at="2019-12-23T05:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="test12()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test12" duration-ms="6726" started-at="2019-12-23T05:28:36Z" description="网页首页“站主博客”点击测试" finished-at="2019-12-23T05:28:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method status="PASS" signature="test13()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test13" duration-ms="6920" started-at="2019-12-23T05:28:43Z" description="网页首页“个人中心”点击测试" finished-at="2019-12-23T05:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method status="PASS" signature="test14()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test14" duration-ms="21147" started-at="2019-12-23T05:28:50Z" description="网页首页“个人中心”的个人主页的3个模块点击测试" finished-at="2019-12-23T05:29:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method status="PASS" signature="test15()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test15" duration-ms="12690" started-at="2019-12-23T05:29:11Z" description="网页首页“个人中心”的三个模块点击测试" finished-at="2019-12-23T05:29:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method status="PASS" signature="test16()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test16" duration-ms="13168" started-at="2019-12-23T05:29:23Z" description="网页首页“搜索框”的搜索测试" finished-at="2019-12-23T05:29:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16 -->
+        <test-method status="PASS" signature="test17()[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="test17" duration-ms="37752" started-at="2019-12-23T05:29:37Z" description="网页页面切换的测试" finished-at="2019-12-23T05:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17 -->
+        <test-method status="PASS" signature="testApplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.edu.test.Testitems@77cd7a0]" name="testApplication" duration-ms="20291" started-at="2019-12-23T05:30:14Z" description="用数据驱动实现登录" data-provider="applicationData" finished-at="2019-12-23T05:30:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test168]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplication -->
+      </class> <!-- com.edu.test.Testitems -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test]">
+  <listeners>
+    <listener class-name="com.edu.freemarker.FreemarkerTestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.edu.test.Testitems">
+        <methods>
+          <include name="test06"/>
+          <include name="test08"/>
+          <include name="test07"/>
+          <include name="test09"/>
+          <include name="test11"/>
+          <include name="test10"/>
+          <include name="test02"/>
+          <include name="test13"/>
+          <include name="test01"/>
+          <include name="test12"/>
+          <include name="test04"/>
+          <include name="test03"/>
+          <include name="doBeforeClass"/>
+          <include name="test05"/>
+        </methods>
+      </class> <!-- com.edu.test.Testitems -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [test] -->

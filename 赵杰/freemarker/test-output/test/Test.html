@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 23 11:20:21 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>98 seconds (98779 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.edu.test.Tests1.test01()'><b>test01</b><br>Test class: com.edu.test.Tests1</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Tests1@31ef45e3</td></tr>
+<tr>
+<td title='com.edu.test.Tests1.test02()'><b>test02</b><br>Test class: com.edu.test.Tests1</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Tests1@31ef45e3</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test02()'><b>test02</b><br>Test class: com.edu.test.Testitems<br>Test method: 控制滚动条拉到底，网页导航栏‘网页logo’点击测试——返回网页首页</td>
+<td></td>
+<td>1</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Tests1.test03()'><b>test03</b><br>Test class: com.edu.test.Tests1</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Tests1@31ef45e3</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test03()'><b>test03</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页主页面“最热”选项测试——跳转至相应的页面</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test04()'><b>test04</b><br>Test class: com.edu.test.Testitems<br>Test method: 点击帖子“太冷了”——进入该帖子详情页面</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test05()'><b>test05</b><br>Test class: com.edu.test.Testitems<br>Test method: 该帖子下点赞功能测试</td>
+<td></td>
+<td>1</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test06()'><b>test06</b><br>Test class: com.edu.test.Testitems<br>Test method: 该帖子下回帖功能测试</td>
+<td></td>
+<td>1</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test07()'><b>test07</b><br>Test class: com.edu.test.Testitems<br>Test method: 帖子中某条回帖的点赞测试</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test08()'><b>test08</b><br>Test class: com.edu.test.Testitems<br>Test method: 帖子信息回复功能</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test09()'><b>test09</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“社区”点击测试</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Tests.test1()'><b>test1</b><br>Test class: com.edu.test.Tests</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Tests@57fffcd7</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test10()'><b>test10</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“消息”点击测试</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test11()'><b>test11</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“橙白OJ”点击测试</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test12()'><b>test12</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“站主博客”点击测试</td>
+<td></td>
+<td>4</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test13()'><b>test13</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“个人中心”点击测试</td>
+<td></td>
+<td>3</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test14()'><b>test14</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“个人中心”的个人主页的3个模块点击测试</td>
+<td></td>
+<td>17</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test15()'><b>test15</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“个人中心”的三个模块点击测试</td>
+<td></td>
+<td>10</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test16()'><b>test16</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页首页“搜索框”的搜索测试</td>
+<td></td>
+<td>10</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.test17()'><b>test17</b><br>Test class: com.edu.test.Testitems<br>Test method: 网页页面切换的测试</td>
+<td></td>
+<td>13</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+<tr>
+<td title='com.edu.test.Tests.test2()'><b>test2</b><br>Test class: com.edu.test.Tests</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Tests@57fffcd7</td></tr>
+<tr>
+<td title='com.edu.test.Tests.test3()'><b>test3</b><br>Test class: com.edu.test.Tests</td>
+<td></td>
+<td>0</td>
+<td>com.edu.test.Tests@57fffcd7</td></tr>
+<tr>
+<td title='com.edu.test.Testitems.testApplication()'><b>testApplication</b><br>Test class: com.edu.test.Testitems<br>Test method: 用数据驱动实现登录<br>Parameters: test168, test123456, 1111</td>
+<td></td>
+<td>21</td>
+<td>com.edu.test.Testitems@598067a5</td></tr>
+</table><p>
+</body>
+</html>
